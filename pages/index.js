@@ -8,8 +8,8 @@ const HARGA_DEFAULT = {
 }
 
 const INCLUDES = [
-  'Frame Hollow Galvanaish 5×10',
-  'Rangka Hollow Galvanaish 4×6',
+  'Frame Hollow Galvanaish 5x10',
+  'Rangka Hollow Galvanaish 4x6',
   'Talang Plat Eser',
   'Cat Dasar Epoxy',
   'Cat Finish',
@@ -48,7 +48,7 @@ export default function Home() {
     rows = [
       {
         label: `${namaAtap}`,
-        detail: `${fmtRpShort(hAtap)} × ${volume} m²`,
+        detail: `${fmtRpShort(hAtap)} x ${volume} m2`,
         nilai: biaya,
       },
     ]
@@ -60,12 +60,12 @@ export default function Home() {
     rows = [
       {
         label: `${namaAtap}`,
-        detail: `${fmtRpShort(hAtap)} × ${volAtap} m²`,
+        detail: `${fmtRpShort(hAtap)} x ${volAtap} m2`,
         nilai: biayaAtap,
       },
       {
         label: 'Talang Air Profil',
-        detail: `${fmtRpShort(hTalang)} × ${lebar} m`,
+        detail: `${fmtRpShort(hTalang)} x ${lebar} m`,
         nilai: biayaTalang,
       },
     ]
@@ -121,7 +121,7 @@ export default function Home() {
       doc.setTextColor(100, 100, 100)
       doc.setFontSize(10)
       doc.setFont('helvetica', 'normal')
-      doc.text(`Volume: ${panjang} × ${lebar} = ${volume} m²`, 14, y)
+      doc.text(`Volume: ${panjang} x ${lebar} = ${volume} m2`, 14, y)
       y += 10
 
       // Tabel rincian harga
@@ -168,7 +168,7 @@ export default function Home() {
       doc.setFont('helvetica', 'normal')
       doc.setTextColor(40, 40, 40)
       INCLUDES.forEach((item, i) => {
-        doc.text(`✓  ${item}`, 20, y + 13 + i * 7)
+        doc.text(`-  ${item}`, 20, y + 13 + i * 7)
       })
 
       y = y + 10 + INCLUDES.length * 7 + 6

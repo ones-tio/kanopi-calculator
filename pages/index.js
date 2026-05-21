@@ -97,7 +97,7 @@ export default function Home() {
 
       doc.setFontSize(10)
       doc.setFont('helvetica', 'normal')
-      doc.text('Bengkel Las & Aluminium', W / 2, 20, { align: 'center' })
+      doc.text('Bengkel Las PAVILION', W / 2, 20, { align: 'center' })
       doc.text(`Tanggal: ${today}`, W / 2, 27, { align: 'center' })
 
       let y = 40

@@ -155,7 +155,7 @@ export default function Home() {
 
       y = doc.lastAutoTable.finalY + 10
 
-      // Kotak "Sudah Termasuk"
+      // Kotak "Keterangan:"
       doc.setFillColor(240, 245, 255)
       doc.setDrawColor(26, 58, 110)
       doc.roundedRect(14, y, W - 28, 8 + INCLUDES.length * 7, 3, 3, 'FD')
